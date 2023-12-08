@@ -1,8 +1,21 @@
 import 'dart:io';
 
+import 'option.dart';
+
 class Terminal {
   void printPrompt(String prompt) {
     stdout.writeln(prompt);
+  }
+
+  void printOptions(List<Option> options) {
+    for (var i = 0; i < options.length; i++) {
+      stdout.writeln('[$i] - ${options[i].label}');
+    }
+
+    // .writeln() -> cursor to the next line
+    stdout.writeln('Enter a choice:\n');
+    // .write() -> cursor in the same line
+    stdout.write('>');
   }
 
   String? collectInput() {
