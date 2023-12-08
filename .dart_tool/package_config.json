@@ -1,0 +1,14 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "prompter_ml_2137",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    }
+  ],
+  "generated": "2023-12-08T19:17:56.285273Z",
+  "generator": "pub",
+  "generatorVersion": "3.2.0"
+}

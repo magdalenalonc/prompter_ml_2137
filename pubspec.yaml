@@ -1,3 +1,6 @@
 name: prompter_ml_2137
 version: 0.0.1
 description: Library to create CLI wizards
+
+environment:
+  sdk: '^3.2.0'
