@@ -8,9 +8,11 @@ class Terminal {
   }
 
   void printOptions(List<Option> options) {
-    for (var i = 0; i < options.length; i++) {
-      stdout.writeln('[$i] - ${options[i].label}');
-    }
+    // .asMap() - convert List of options to map (key: value pairs), where keys - indexes & value - options
+    // .forEach() - applie action to each key: value pair of the map.
+    options.asMap().forEach((index, option) {
+      stdout.writeln('[$index] - ${option.label}');
+    });
 
     // .writeln() -> cursor to the next line
     stdout.writeln('Enter a choice:\n');
