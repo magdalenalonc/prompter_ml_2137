@@ -1,5 +1,4 @@
-import 'package:prompter_ml_2137/src/prompter.dart';
-import 'package:prompter_ml_2137/src/option.dart';
+import 'package:prompter_ml_2137/prompter_ml_2137.dart';
 
 void main() {
   final options = [
