@@ -8,6 +8,5 @@ void main() {
   ];
 
   final prompter = Prompter();
-  final userPick = prompter.ask('What color do you like?', options);
-  print(userPick);
+  print(prompter.askBinary('Do you like Dart?'));
 }
