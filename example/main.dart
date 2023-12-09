@@ -8,5 +8,6 @@ void main() {
   ];
 
   final prompter = Prompter();
-  prompter.ask('What color do you want?', options);
+  final userPick = prompter.ask('What color do you like?', options);
+  print(userPick);
 }
